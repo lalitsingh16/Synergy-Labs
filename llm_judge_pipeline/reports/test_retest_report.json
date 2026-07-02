@@ -1,0 +1,119 @@
+{
+  "timestamp": "2026-07-02T21:51:24.250988+00:00",
+  "judge_provider": "groq",
+  "judge_model": "llama-3.3-70b-versatile",
+  "total_test_cases": 10,
+  "pass_fail_consistency": {
+    "consistent_count": 5,
+    "total_count": 10,
+    "percentage": 83.33333333333334
+  },
+  "exact_score_consistency": {
+    "consistent_count": 5,
+    "total_count": 10,
+    "percentage": 83.33333333333334
+  },
+  "criterion_score_consistency": {
+    "consistent_count": 19,
+    "total_count": 20,
+    "percentage": 95.0
+  },
+  "per_case_metrics": [
+    {
+      "case_id": "tc_001",
+      "scores": [
+        4.67,
+        4.67,
+        4.67
+      ],
+      "pass_verdicts": [
+        true,
+        true,
+        true
+      ],
+      "pass_fail_consistent": true,
+      "exact_score_consistent": true,
+      "criterion_consistency": 1.0
+    },
+    {
+      "case_id": "tc_003",
+      "scores": [
+        3.64,
+        3.64,
+        3.09
+      ],
+      "pass_verdicts": [
+        true,
+        true,
+        false
+      ],
+      "pass_fail_consistent": false,
+      "exact_score_consistent": false,
+      "criterion_consistency": 0.6666666666666666
+    },
+    {
+      "case_id": "tc_004",
+      "scores": [
+        4.76,
+        4.76,
+        4.76
+      ],
+      "pass_verdicts": [
+        true,
+        true,
+        true
+      ],
+      "pass_fail_consistent": true,
+      "exact_score_consistent": true,
+      "criterion_consistency": 1.0
+    },
+    {
+      "case_id": "tc_005",
+      "scores": [
+        1.44,
+        1.44,
+        1.44
+      ],
+      "pass_verdicts": [
+        false,
+        false,
+        false
+      ],
+      "pass_fail_consistent": true,
+      "exact_score_consistent": true,
+      "criterion_consistency": 1.0
+    },
+    {
+      "case_id": "tc_009",
+      "scores": [
+        1.31,
+        1.31,
+        1.31
+      ],
+      "pass_verdicts": [
+        false,
+        false,
+        false
+      ],
+      "pass_fail_consistent": true,
+      "exact_score_consistent": true,
+      "criterion_consistency": 1.0
+    },
+    {
+      "case_id": "tc_010",
+      "scores": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "pass_verdicts": [
+        true,
+        true,
+        true
+      ],
+      "pass_fail_consistent": true,
+      "exact_score_consistent": true,
+      "criterion_consistency": 1.0
+    }
+  ]
+}

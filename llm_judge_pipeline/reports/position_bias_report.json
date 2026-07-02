@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-02T21:50:35.297000+00:00",
+  "judge_provider": "groq",
+  "judge_model": "llama-3.3-70b-versatile",
+  "total_pairs": 5,
+  "flip_count": 1,
+  "flip_rate": 0.2,
+  "consistent_count": 4,
+  "flip_examples": [
+    {
+      "pair_id": "pair_004",
+      "input_preview": "What are the main causes of World War I?",
+      "winner_when_AB": "A",
+      "winner_when_BA": "tie",
+      "rationale_AB": "Response A is the overall winner because it provides a comprehensive, accurate, and well-structured explanation of the main causes of World War I, maintaining a professional tone and faithfulness to historical context.",
+      "rationale_BA": ""
+    }
+  ],
+  "per_pair": [
+    {
+      "pair_id": "pair_001",
+      "winner_AB": "A",
+      "winner_BA": "A",
+      "flipped": false
+    },
+    {
+      "pair_id": "pair_002",
+      "winner_AB": "B",
+      "winner_BA": "B",
+      "flipped": false
+    },
+    {
+      "pair_id": "pair_003",
+      "winner_AB": "A",
+      "winner_BA": "A",
+      "flipped": false
+    },
+    {
+      "pair_id": "pair_004",
+      "winner_AB": "A",
+      "winner_BA": "tie",
+      "flipped": true
+    },
+    {
+      "pair_id": "pair_005",
+      "winner_AB": "A",
+      "winner_BA": "A",
+      "flipped": false
+    }
+  ]
+}

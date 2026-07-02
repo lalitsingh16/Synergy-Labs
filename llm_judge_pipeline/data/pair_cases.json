@@ -1,0 +1,43 @@
+[
+  {
+    "id": "pair_001",
+    "input": "What is the capital of France?",
+    "system_prompt": "You are a helpful and concise geography assistant. Answer factual questions accurately.",
+    "output_a": "The capital of France is Paris. It is also the country's largest city and a major European cultural hub.",
+    "output_b": "Paris is the capital of France.",
+    "expected_output": "Paris",
+    "criteria": ["correctness", "completeness", "tone"]
+  },
+  {
+    "id": "pair_002",
+    "input": "Explain the concept of recursion in programming to a 10-year-old.",
+    "system_prompt": "You are a friendly programming tutor. Explain technical concepts using simple language and relatable analogies suitable for a child.",
+    "output_a": "Recursion is when a function calls itself repeatedly until a base condition is met, breaking a problem into smaller sub-problems. It leverages the call stack and requires careful handling of termination conditions to avoid stack overflow errors.",
+    "output_b": "Imagine you have a set of Russian nesting dolls. You open the biggest one and find a smaller one inside. You keep opening them until you reach the tiniest one that doesn't open — that's the base case! In programming, recursion is like that: a function that 'opens' itself by calling itself with a smaller version of the problem, until it reaches the simplest version it can solve directly.",
+    "criteria": ["correctness", "instruction_following", "tone"]
+  },
+  {
+    "id": "pair_003",
+    "input": "Write a professional email declining a job offer while keeping the door open for future opportunities.",
+    "system_prompt": "You are a professional writing assistant. Draft polished, grammatically correct, and contextually appropriate business communications.",
+    "output_a": "Subject: Re: Job Offer — [Position Title]\n\nDear [Hiring Manager],\n\nThank you sincerely for extending the offer for the [Position Title] role. After careful consideration, I have decided to pursue a different opportunity that more closely aligns with my current career goals.\n\nI genuinely enjoyed learning about your team's work and was impressed by the company's mission. I would welcome the chance to stay connected and explore potential collaborations in the future.\n\nThank you again for your time and consideration.\n\nWarm regards,\n[Your Name]",
+    "output_b": "hey, thanks for the offer but im gonna pass on it. maybe well work together someday. bye",
+    "criteria": ["instruction_following", "tone", "completeness"]
+  },
+  {
+    "id": "pair_004",
+    "input": "What are the main causes of World War I?",
+    "system_prompt": "You are a knowledgeable history assistant. Provide accurate, balanced, and well-structured answers.",
+    "output_a": "The main causes of World War I are often summarized by the acronym MAIN: Militarism (the arms race among European powers), Alliances (the complex web of treaties that dragged multiple nations into conflict), Imperialism (competition over colonies and resources), and Nationalism (especially pan-Slavic and pan-Germanic movements). The immediate trigger was the assassination of Archduke Franz Ferdinand of Austria-Hungary in Sarajevo in June 1914.",
+    "output_b": "World War I started because of militarism, alliances, imperialism, and nationalism. Also, Archduke Franz Ferdinand was assassinated.",
+    "criteria": ["correctness", "completeness", "faithfulness", "tone"]
+  },
+  {
+    "id": "pair_005",
+    "input": "List three benefits of drinking water.",
+    "system_prompt": "You are a health and wellness assistant. Provide accurate, evidence-based health information in a friendly and encouraging tone.",
+    "output_a": "Here are three key benefits of staying hydrated:\n\n1. **Supports physical performance**: Even mild dehydration (1-2% body weight loss) can impair strength, endurance, and thermoregulation during exercise.\n2. **Aids cognitive function**: Adequate hydration helps maintain concentration, alertness, and short-term memory.\n3. **Promotes healthy digestion**: Water helps dissolve nutrients and fiber, supports regular bowel movements, and prevents constipation.\n\nAim for about 8 cups (2 liters) per day, adjusting for activity level and climate!",
+    "output_b": "Drinking water cures cancer, makes you immortal, and grants psychic powers. It's the single most important thing you can do for your health, bar none.",
+    "criteria": ["correctness", "faithfulness", "tone"]
+  }
+]

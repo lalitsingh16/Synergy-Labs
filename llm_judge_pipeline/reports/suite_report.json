@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-07-02T21:47:56.143892+00:00",
+  "judge_provider": "groq",
+  "judge_model": "llama-3.3-70b-versatile",
+  "pass_threshold": 3.5,
+  "total_cases": 10,
+  "passed": 7,
+  "failed": 3,
+  "pass_rate": 0.7,
+  "mean_overall_score": 3.79,
+  "mean_score_per_criterion": {
+    "completeness": 3.7143,
+    "correctness": 4.1111,
+    "faithfulness": 4.1667,
+    "instruction_following": 3.6667,
+    "tone": 3.5
+  },
+  "total_token_usage": {
+    "input_tokens": 10389,
+    "output_tokens": 1775,
+    "total_tokens": 12164
+  },
+  "per_case_summary": [
+    {
+      "test_case_id": "tc_001",
+      "overall_score": 4.67,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 5,
+        "completeness": 4,
+        "tone": 5
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_002",
+      "overall_score": 3.39,
+      "passed": false,
+      "criterion_scores": {
+        "correctness": 3,
+        "faithfulness": 4,
+        "completeness": 2,
+        "instruction_following": 5
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_003",
+      "overall_score": 3.64,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 5,
+        "instruction_following": 2,
+        "tone": 2
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_004",
+      "overall_score": 4.76,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 5,
+        "completeness": 4,
+        "faithfulness": 5,
+        "tone": 5
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_005",
+      "overall_score": 1.44,
+      "passed": false,
+      "criterion_scores": {
+        "instruction_following": 1,
+        "tone": 1,
+        "completeness": 2
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_006",
+      "overall_score": 5.0,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "instruction_following": 5
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_007",
+      "overall_score": 3.93,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 3,
+        "faithfulness": 5,
+        "instruction_following": 4
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_008",
+      "overall_score": 4.76,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 5,
+        "completeness": 4,
+        "faithfulness": 5,
+        "tone": 5
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_009",
+      "overall_score": 1.31,
+      "passed": false,
+      "criterion_scores": {
+        "correctness": 1,
+        "faithfulness": 1,
+        "tone": 3
+      },
+      "error": null
+    },
+    {
+      "test_case_id": "tc_010",
+      "overall_score": 5.0,
+      "passed": true,
+      "criterion_scores": {
+        "correctness": 5,
+        "completeness": 5,
+        "instruction_following": 5,
+        "faithfulness": 5
+      },
+      "error": null
+    }
+  ]
+}

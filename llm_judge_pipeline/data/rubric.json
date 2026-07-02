@@ -1,0 +1,68 @@
+{
+  "rubric_version": "1.0.0",
+  "description": "Evaluation rubric for LLM-as-judge pipeline. Each criterion is scored on a 1–5 integer scale.",
+  "criteria": {
+    "correctness": {
+      "description": "Measures factual accuracy and logical soundness of the model's output relative to ground truth or established knowledge.",
+      "weight": 0.30,
+      "scale": {
+        "1": "The response contains major factual errors or is entirely incorrect. Key claims are demonstrably false.",
+        "2": "The response is mostly incorrect or misleading. Some elements are accurate but the overall answer is wrong or harmful.",
+        "3": "The response is partially correct. It captures some true information but omits or distorts important facts.",
+        "4": "The response is mostly correct with only minor inaccuracies or imprecisions that do not significantly affect the answer.",
+        "5": "The response is fully correct, factually accurate, and logically sound. Every claim is verifiable and true."
+      }
+    },
+    "faithfulness": {
+      "description": "Measures whether the model's output is faithful to the source material provided in the input. The model should not hallucinate, fabricate, or contradict information from the provided context.",
+      "weight": 0.25,
+      "scale": {
+        "1": "The response contains substantial hallucinations or directly contradicts the source material. Key fabricated claims are presented as fact.",
+        "2": "The response adds significant unsupported information or distorts the source material in a meaningful way.",
+        "3": "The response is mostly faithful but includes at least one notable unsupported claim or minor distortion.",
+        "4": "The response is faithful to the source with only trivial or inconsequential additions (e.g., minor bridging statements).",
+        "5": "The response is entirely grounded in the provided source. Every claim can be traced back to the input context with no fabrication."
+      }
+    },
+    "completeness": {
+      "description": "Measures whether the response covers all necessary aspects of the question or task without significant omissions.",
+      "weight": 0.20,
+      "scale": {
+        "1": "The response is severely incomplete, addressing only a negligible portion of the required task or question.",
+        "2": "The response is notably incomplete. Major components or aspects of the task are missing.",
+        "3": "The response covers the core requirement but omits important supporting details or secondary aspects.",
+        "4": "The response is mostly complete. Only minor, non-essential details are absent.",
+        "5": "The response is fully complete, thoroughly addressing all aspects of the question or task with appropriate depth."
+      }
+    },
+    "instruction_following": {
+      "description": "Measures how well the model adheres to explicit instructions given in the system prompt and user input, including format, length, style, and scope constraints.",
+      "weight": 0.15,
+      "scale": {
+        "1": "The response ignores or directly violates the core instructions. The format, scope, or constraints are entirely disregarded.",
+        "2": "The response follows only some instructions. Several explicit constraints (e.g., format, length, persona) are violated.",
+        "3": "The response follows most instructions but violates at least one notable constraint (e.g., uses wrong format, exceeds scope).",
+        "4": "The response closely follows all instructions with only trivial or barely noticeable deviations.",
+        "5": "The response precisely and completely follows all explicit instructions in both the system prompt and user input, with no deviations."
+      }
+    },
+    "tone": {
+      "description": "Measures whether the response's tone, formality level, and communication style are appropriate for the given context, audience, and purpose.",
+      "weight": 0.10,
+      "scale": {
+        "1": "The tone is entirely inappropriate — e.g., offensive, dismissive, overly casual in a formal context, or alarmist.",
+        "2": "The tone is notably mismatched to the context. It may be condescending, unnecessarily verbose, or socially awkward.",
+        "3": "The tone is acceptable but imperfect. Minor mismatches in formality, warmth, or audience appropriateness are present.",
+        "4": "The tone is mostly appropriate for the context and audience. Only subtle refinements could improve it.",
+        "5": "The tone is perfectly calibrated — professional, warm, and appropriate for the stated audience and purpose. Highly natural and engaging."
+      }
+    }
+  },
+  "scoring_notes": {
+    "aggregate_method": "weighted_average",
+    "min_score": 1.0,
+    "max_score": 5.0,
+    "pass_threshold": 3.5,
+    "instructions_for_judge": "For each criterion listed in the test case's 'criteria' field, assign a score from 1 to 5 using the scale descriptions above. Only score criteria relevant to the test case. Return a JSON object with criterion names as keys and integer scores as values, plus a brief justification string for each score."
+  }
+}

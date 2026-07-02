@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tc_001",
+    "input": "What is the capital of France?",
+    "system_prompt": "You are a helpful and concise geography assistant. Answer factual questions accurately.",
+    "model_output": "The capital of France is Paris. It is also the country's largest city and a major European cultural hub.",
+    "expected_output": "Paris",
+    "criteria": ["correctness", "completeness", "tone"]
+  },
+  {
+    "id": "tc_002",
+    "input": "Summarize the following passage in one sentence: 'Photosynthesis is the process by which green plants convert sunlight, water, and carbon dioxide into glucose and oxygen. It primarily occurs in the chloroplasts of plant cells and is essential for life on Earth.'",
+    "system_prompt": "You are a scientific summarizer. Summarize the given passage in exactly one sentence without adding external information.",
+    "model_output": "Photosynthesis is how plants use sunlight to make food, and it's really important for life.",
+    "expected_output": "Photosynthesis is the process by which green plants use sunlight, water, and CO2 to produce glucose and oxygen in their chloroplasts.",
+    "criteria": ["correctness", "faithfulness", "completeness", "instruction_following"]
+  },
+  {
+    "id": "tc_003",
+    "input": "Explain the concept of recursion in programming to a 10-year-old.",
+    "system_prompt": "You are a friendly programming tutor. Explain technical concepts using simple language and relatable analogies suitable for a child.",
+    "model_output": "Recursion is when a function calls itself repeatedly until a base condition is met, breaking a problem into smaller sub-problems. It leverages the call stack and requires careful handling of termination conditions to avoid stack overflow errors.",
+    "expected_output": null,
+    "criteria": ["correctness", "instruction_following", "tone"]
+  },
+  {
+    "id": "tc_004",
+    "input": "What are the main causes of World War I?",
+    "system_prompt": "You are a knowledgeable history assistant. Provide accurate, balanced, and well-structured answers.",
+    "model_output": "The main causes of World War I are often summarized by the acronym MAIN: Militarism (the arms race among European powers), Alliances (the complex web of treaties that dragged multiple nations into conflict), Imperialism (competition over colonies and resources), and Nationalism (especially pan-Slavic and pan-Germanic movements). The immediate trigger was the assassination of Archduke Franz Ferdinand of Austria-Hungary in Sarajevo in June 1914.",
+    "expected_output": null,
+    "criteria": ["correctness", "completeness", "faithfulness", "tone"]
+  },
+  {
+    "id": "tc_005",
+    "input": "Write a professional email declining a job offer while keeping the door open for future opportunities.",
+    "system_prompt": "You are a professional writing assistant. Draft polished, grammatically correct, and contextually appropriate business communications.",
+    "model_output": "hey, thanks for the offer but im gonna pass on it. maybe well work together someday. bye",
+    "expected_output": null,
+    "criteria": ["instruction_following", "tone", "completeness"]
+  },
+  {
+    "id": "tc_006",
+    "input": "Calculate the compound interest on a principal of $5,000 at an annual rate of 6% compounded quarterly for 3 years.",
+    "system_prompt": "You are a precise financial calculator assistant. Show your work step by step and provide the final numerical answer.",
+    "model_output": "Using the compound interest formula A = P(1 + r/n)^(nt):\n- P = $5,000\n- r = 0.06\n- n = 4 (quarterly)\n- t = 3\n\nA = 5000 * (1 + 0.06/4)^(4*3)\nA = 5000 * (1.015)^12\nA = 5000 * 1.19562\nA ≈ $5,978.09\n\nCompound Interest = $5,978.09 - $5,000 = $978.09",
+    "expected_output": "$978.09",
+    "criteria": ["correctness", "completeness", "instruction_following"]
+  },
+  {
+    "id": "tc_007",
+    "input": "Translate the following sentence to Spanish: 'The early bird catches the worm.'",
+    "system_prompt": "You are a professional translator. Provide natural, idiomatic translations. If a direct translation sounds unnatural, prefer the culturally equivalent idiom in the target language.",
+    "model_output": "El pájaro tempranero atrapa al gusano.",
+    "expected_output": "A quien madruga, Dios le ayuda. (idiomatic equivalent)",
+    "criteria": ["correctness", "faithfulness", "instruction_following"]
+  },
+  {
+    "id": "tc_008",
+    "input": "What is the difference between supervised and unsupervised learning in machine learning?",
+    "system_prompt": "You are an expert ML educator. Provide clear, accurate, and concise explanations with concrete examples.",
+    "model_output": "In supervised learning, the model is trained on labeled data — each input has a corresponding correct output (e.g., classifying emails as spam/not spam). The model learns a mapping from inputs to outputs. In unsupervised learning, the model works with unlabeled data and discovers patterns on its own (e.g., clustering customers by purchasing behavior). The key difference is the presence or absence of labeled training examples.",
+    "expected_output": null,
+    "criteria": ["correctness", "completeness", "faithfulness", "tone"]
+  },
+  {
+    "id": "tc_009",
+    "input": "List three benefits of drinking water.",
+    "system_prompt": "You are a health and wellness assistant. Provide accurate, evidence-based health information in a friendly and encouraging tone.",
+    "model_output": "Drinking water cures cancer, makes you immortal, and grants psychic powers. It's the single most important thing you can do for your health, bar none.",
+    "expected_output": null,
+    "criteria": ["correctness", "faithfulness", "tone"]
+  },
+  {
+    "id": "tc_010",
+    "input": "Given a Python list [3, 1, 4, 1, 5, 9, 2, 6], write code to return only the unique elements in sorted order.",
+    "system_prompt": "You are a Python programming assistant. Write clean, idiomatic Python code with a brief explanation.",
+    "model_output": "```python\nmy_list = [3, 1, 4, 1, 5, 9, 2, 6]\nunique_sorted = sorted(set(my_list))\nprint(unique_sorted)  # Output: [1, 2, 3, 4, 5, 6, 9]\n```\nThis uses `set()` to remove duplicates and `sorted()` to arrange the results in ascending order. The time complexity is O(n log n) dominated by the sort.",
+    "expected_output": "[1, 2, 3, 4, 5, 6, 9]",
+    "criteria": ["correctness", "completeness", "instruction_following", "faithfulness"]
+  }
+]

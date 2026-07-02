@@ -1,0 +1,23 @@
+# =============================================================================
+# LLM-as-Judge Evaluation Pipeline — Python Dependencies
+# =============================================================================
+# Install with:  pip install -r requirements.txt
+
+# --- LLM Provider SDKs -------------------------------------------------------
+google-genai>=0.3.0        # Google Gemini (generator model)
+groq>=0.11.0               # Groq-hosted Llama (judge model)
+
+# --- Environment & Configuration ---------------------------------------------
+python-dotenv>=1.0.0       # Loads variables from .env file
+
+# --- Data Processing & Reporting ---------------------------------------------
+pandas>=2.1.0              # DataFrame handling for scoring results and reports
+
+# --- Utilities ---------------------------------------------------------------
+tenacity>=8.2.0            # Retry logic for API calls with backoff
+tqdm>=4.66.0               # Progress bars for batch evaluation runs
+rich>=13.7.0               # Pretty console output and tables
+
+# --- Dev / Testing -----------------------------------------------------------
+pytest>=8.0.0              # Unit testing framework
+pytest-asyncio>=0.23.0     # Async test support
